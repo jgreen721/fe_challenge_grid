@@ -502,7 +502,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
               </div>
-              <div class="mobile-menu">
+              <div class="mobile-menu hide-menu">
                 <div class="mobile-content">
                   <h2 class="mobile-h2">About</h2>
                   <h2 class="mobile-h2">Services</h2>
@@ -751,18 +751,18 @@
         orangeCardDiv.style.backgroundImage = `url(./images/${path}/image-photography.jpg)`;
       }
 
-      onresize = (e) => {
-        console.log("screen change", e.target.innerWidth);
-        let width = e.target.innerWidth;
+      // onresize = (e) => {
+      //   console.log("screen change", e.target.innerWidth);
+      //   let width = e.target.innerWidth;
 
-        if (width < 500) {
-          console.log("mobile");
-          renderImages("mobile");
-        } else {
-          console.log("desktop");
-          renderImages("desktop");
-        }
-      };
+      //   if (width < 500) {
+      //     console.log("mobile");
+      //     renderImages("mobile");
+      //   } else {
+      //     console.log("desktop");
+      //     renderImages("desktop");
+      //   }
+      // };
 
       onload = (e) => {
         console.log("screen change", e.target.innerWidth);
